@@ -2,9 +2,9 @@ import React,{useState} from "react";
 import { connect } from "react-redux";
 import DataTable from 'react-data-table-component';
 import DataTableExtensions from 'react-data-table-component-extensions';
-import { columns } from './Data.js';
+import { columns,columns2 } from './Data.js';
 
-const Table = ({ data }) => {
+const Table = ({ data, data2 }) => {
 
   const searchTable = (
      <DataTableExtensions columns={columns} data={data}>
@@ -17,9 +17,20 @@ const Table = ({ data }) => {
       />
     </DataTableExtensions>
   );
+  const searchTable = (
+     <DataTableExtensions columns={columns2} data={data2}>
+      <DataTable
+        highlightOnHover={true}
+        noHeader={true}
+        defaultSortField = "id"
+        pagination={true}
+        subHeader={true}
+      />
+    </DataTableExtensions>
+  );
    return (
   <div>
-    <h2 className="text-secondary">Data</h2>
+    <h2 className="text-secondary">Data 2</h2>
     {searchTable}
   </div>
   );

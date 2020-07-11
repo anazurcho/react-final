@@ -19,6 +19,11 @@ class StrapiService {
         } )
         return res.data;
     }
+    async getData2() {
+        const res = await axios.get( `${settings._apiBase}v2/areas/`, {
+        } )
+        return res.data;
+    }
 // http: //api.football-data.org/v2/competitions/
 }
 

@@ -18,3 +18,25 @@ export const columns = [
     sortable: true,
   }
 ];
+export const columns2 = [
+  {
+    name: 'ID',
+    selector: 'id',
+    sortable: true,
+  },
+  {
+    name: 'Name',
+    selector: 'name',
+    sortable: true,
+  },
+  {
+    name: 'countryCode',
+    selector: 'countryCode',
+    sortable: true,
+  },
+  {
+    name: 'parentArea',
+    selector: 'parentArea',
+    sortable: true,
+  }
+];
