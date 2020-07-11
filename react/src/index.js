@@ -17,7 +17,7 @@ const app = (
     <Provider store={store}>
         <StrapiServiceContext.Provider value={strapiService}>
             <Router>
-                    <App />
+                <App />
             </Router>
         </StrapiServiceContext.Provider>
     </Provider>
