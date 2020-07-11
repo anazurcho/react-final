@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`queri test should return Sections 1`] = `undefined`;
+
+exports[`queries test should return Sections 1`] = `undefined`;
+
+exports[`query links test should return Sections 1`] = `undefined`;
+
+exports[`query section test should return Sections 1`] = `undefined`;
+
+exports[`query section test should return Sections 2`] = `undefined`;
