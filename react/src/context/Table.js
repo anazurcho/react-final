@@ -17,7 +17,7 @@ const Table = ({ data, data2 }) => {
       />
     </DataTableExtensions>
   );
-  const searchTable = (
+  const searchTable2 = (
      <DataTableExtensions columns={columns2} data={data2}>
       <DataTable
         highlightOnHover={true}
@@ -32,6 +32,7 @@ const Table = ({ data, data2 }) => {
   <div>
     <h2 className="text-secondary">Data 2</h2>
     {searchTable}
+    {searchTable2}
   </div>
   );
 };

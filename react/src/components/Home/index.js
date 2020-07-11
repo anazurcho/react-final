@@ -1,6 +1,5 @@
 import React from "react";
 import MainDataHome from "../../context";
-// import MainHome from "../../context";
 
 const Home = () => {
   
@@ -8,7 +7,6 @@ const Home = () => {
     <div className = "row row-cols-1">
       <div className="col-8">
         <MainDataHome />
-        <MainSecondData/>
       </div> 
     </div>
   );
