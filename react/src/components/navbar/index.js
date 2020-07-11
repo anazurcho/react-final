@@ -22,7 +22,6 @@ const Navbar = ( { isLoggedIn, userLoggedOut,loggedInUser, ChangeTheme }) => {
         <Link to="/" className="nav-link">Logout</Link>
     </li> : null;
 
-    const createLink = isLoggedIn? <Link to="/create-link" className="nav-link">Create New Link</Link>:null;
 
     const authUser = isLoggedIn ? null : (
         <React.Fragment>
@@ -42,7 +41,6 @@ const Navbar = ( { isLoggedIn, userLoggedOut,loggedInUser, ChangeTheme }) => {
                         <Link to="/" className="nav-link">{loggedInUser}  Home</Link>
                     </li>
                     {authUser}
-                    {createLink}
                     {logout}
                     <DarkModeToggle
                         onChange={DarkModeOn}

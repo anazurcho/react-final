@@ -17,10 +17,10 @@ const MainDataHome = () => {
            console.log(data)
          });
         strapiService.getData2() 
-         .then( response => {
-           setData2(response.areas);
-           console.log( response );
-         });
+          .then( response => {
+            setData2(response.areas);
+            console.log( response );
+          });
      },[]);
    
   return (
