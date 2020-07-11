@@ -27,7 +27,6 @@ const MainDataHome = () => {
     <div>
       <h1> this is react final project</h1>
       <Table data={data} data2={data2}/>
-      
     </div>
    
   );

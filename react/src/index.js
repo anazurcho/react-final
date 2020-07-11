@@ -7,8 +7,6 @@ import StrapiServiceContext from "./services/strapi-service-context";
 import './style/index.css';
 import StrapiService from "./services/strapiService";
 
-import { ApolloProvider } from "react-apollo";
-import client from './apolo-service/utils/apolloClient'
 
 
 const strapiService = new StrapiService();
@@ -19,9 +17,7 @@ const app = (
     <Provider store={store}>
         <StrapiServiceContext.Provider value={strapiService}>
             <Router>
-                 <ApolloProvider client={client}>
                     <App />
-                </ApolloProvider>
             </Router>
         </StrapiServiceContext.Provider>
     </Provider>
